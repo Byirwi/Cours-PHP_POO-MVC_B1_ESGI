@@ -17,7 +17,7 @@ class Router {
         $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
     
         // Définit la base de notre application
-        $base = '/COURS/TP_ELDEN_RING';
+        $base = '/Tp_Elden_Ring_V2/';
         
         // Retire la base si présente
         if (strpos($uri, $base) === 0) {
