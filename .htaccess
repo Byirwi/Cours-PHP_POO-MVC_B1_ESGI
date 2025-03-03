@@ -2,7 +2,7 @@
 RewriteEngine On
 
 # Définit la base pour les URL réécrites
-RewriteBase /COURS/TP_ELDEN_RING/
+RewriteBase /Tp_Elden_Ring_V2/
 
 # Si la requête ne correspond pas à un fichier existant
 RewriteCond %{REQUEST_FILENAME} !-f
