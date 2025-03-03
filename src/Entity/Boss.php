@@ -12,4 +12,3 @@ class Boss extends Character {
         return $this->name . ' attaque ' . $target->getName() . ' et lui inflige ' . $damage . ' points de dégâts !';
     }
 }
-$Malenia = new Boss('Malenia', 100, 20);
