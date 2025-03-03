@@ -72,6 +72,6 @@ class Hero extends Character {
     }
 }
 
-$Lolan = new Hero("God of my heart Lolan", 100000000000, 100000000000, 100000000000, 100000000000) // les deux derniere valeur sont reprociquement mana et endurance 
-$Liam = new Hero("GOD of Extra-Chromies", 1000000, 1000000, 1000000, 1000000)
+$Lolan = new Hero("God of my heart Lolan", 1709, 1560, 1830, 10000) // les deux derniere valeur sont reprociquement mana et endurance 
+$Liam = new Hero("GOD of Extra-Chromies", 19, 16, 30, 40)
 $letMeSoloHer = new hero("let me solo her",250, 50, 100, 100) 
