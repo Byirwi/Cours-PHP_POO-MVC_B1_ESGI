@@ -29,4 +29,15 @@ class HeroRepository {
         }
         return null;
     }
+
+    public function save(hero $hero): bool {
+        $stmt = $this->pdo->prepare('INSERT INTO hero (name, health, attack_power, mana, endurance) VALUES (:name, :health, :attack_power, :mana, :endurance)');
+        $stmt->execute([
+            'name' => $hero->getName(),
+            'health' => $hero->getHealth(),
+            'attack_power' => $hero->getAttackPower(),
+            'mana' => $hero->getMana(),
+            'endurance' => $hero->getEndurance()
+        ]);
+    }
 }

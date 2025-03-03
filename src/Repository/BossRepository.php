@@ -30,4 +30,13 @@ class BossRepository {
         }
         return null;
     }
+
+    public function save(boss $boss): bool {
+        $stmt = $this->pdo->prepare('INSERT INTO boss (name, health, attack_power) VALUES (:name, :health, :attack_power)');
+        return $stmt->execute([
+            'name' => $boss->getName(),
+            'health' => $boss->getHealth(),
+            'attack_power' => $boss->getAttackPower()
+        ]);
+    }
 }
