@@ -1,0 +1,12 @@
+# Active le moteur de réécriture
+RewriteEngine On
+
+# Définit la base pour les URL réécrites
+RewriteBase /COURS/TP_ELDEN_RING/
+
+# Si la requête ne correspond pas à un fichier existant
+RewriteCond %{REQUEST_FILENAME} !-f
+# Et si la requête ne correspond pas à un dossier existant
+RewriteCond %{REQUEST_FILENAME} !-d
+# Redirige vers index.php en conservant le reste de l'URL
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]

@@ -1,0 +1,16 @@
+{
+    "name": "valen/tp_elden_ring",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Tests\\": "tests"
+        }
+    },
+    "authors": [
+        {
+            "name": "Valentin RIBEZZI",
+            "email": "valentin.ribezzi@pyramide-agency.com"
+        }
+    ],
+    "require": {}
+}
