@@ -19,7 +19,7 @@ class CombatService {
         $hero = $heroRepo->findRandom();
         if (!$hero) {
             // Cas par défaut si aucune donnée n'est trouvée
-            $hero = new Hero("Chevalier Errant", 150, 25, 100, 100);
+            $hero = new Hero("Lolan", 250   , 99, 300, 330);
         }
         $boss = $bossRepo->findRandom();
         if (!$boss) {

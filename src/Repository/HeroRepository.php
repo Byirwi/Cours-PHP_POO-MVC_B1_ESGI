@@ -12,7 +12,7 @@ class HeroRepository {
         $this->pdo = Database::getConnection();
     }
 
-    public function findRandom(): ?hero{
+    public function findRandom(): ?Hero{
         $stmt = $this->pdo->query('SELECT * FROM heroes ORDER BY RAND() LIMIT 1');
         $stmt = $stmt->fetch(PDO::FETCH_ASSOC);
         if ($data) {
@@ -31,7 +31,7 @@ class HeroRepository {
         return null;
     }
 
-    public function save(hero $hero): bool {
+    public function save(Hero $hero): bool {
         $stmt = $this->pdo->prepare('INSERT INTO heroes (name, health, attack_power, mana, endurance) VALUES (:name, :health, :attack_power, :mana, :endurance)');
         $stmt->execute([
             'name' => $hero->getName(),
