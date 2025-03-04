@@ -4,7 +4,7 @@ return [
         'host'     => 'localhost',
         'dbname'   => 'elden_ring_game',
         'user'     => 'Game_Elden_Ring',
-        'password' => 'x5oidbXp]yDicILs',
+        'password' => 'uimhONTN2a0Qytla',
         'charset'  => 'utf8'
     ]
 ];
